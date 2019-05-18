@@ -15,4 +15,6 @@ A PC visual interface allows users to:
 * Configure data logging interval and sleep period of the device
 * Data visualization in a Google maps template
 
+![GORGAS tracker prototype](https://github.com/healthinnovation/gorgas_tracker/blob/master/images/gorgas_prototype.jpg)
+
 Understanding the relationship between malaria transmission and human mobility in diverse endemic settings is key for designing and implementing locally adapted and sustainable control and elimination strategies (Rosa-Aguirre et al., 2017).
