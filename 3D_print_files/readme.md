@@ -4,10 +4,10 @@ This folder is for STL files that have been compiled through the build process. 
 _Version 6.0 was the last design and it was tested on urban and rural settings from Iquitos, Loreto (Peru)_
 
 ## Print settings
-**3D Printer model:** Prusa i3 (reference)
-**Layer size:** 0.2mm
-**Adhesion type:** Brim (optional)
-**Support type:** None
-**Infill Density:** 30%
-**Filament**: PLA/ABS
+**- 3D Printer model:** Prusa i3 (reference)
+**- Layer size:** 0.2mm
+**- Adhesion type:** Brim (optional)
+**- Support type:** None
+**- Infill Density:** 30%
+**- Filament**: PLA/ABS
 
