@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Malaria.exe" version="1.0.0.23" publicKeyToken="8903bb6e838fddea" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Malaria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Malaria.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la 
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GMap.NET.Core.dll" size="2193920">
+      <assemblyIdentity name="GMap.NET.Core" version="1.6.0.0" publicKeyToken="B85B9027B614AFEF" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jwEEhMfvezX8HSLJd9jde3tHKaI3h25RIDLklCXrPko=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GMap.NET.WindowsForms.dll" size="70144">
+      <assemblyIdentity name="GMap.NET.WindowsForms" version="1.6.0.0" publicKeyToken="B85B9027B614AFEF" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fVTQhMaxdOKdAf5L/GbFfCupaeFaYwjuOBFnOpuYuE4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Malaria.exe" size="48128">
+      <assemblyIdentity name="Malaria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eChsz+aZkHmQ8FKfW71Y1ZGwSMTSEfb9ychNTeFfU3k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Malaria.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=José\José Saldaña" issuerKeyHash="a8fb3e38afb5361659b7be477464ccd3b87d3939" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>oOjWHF0R0zvkoahBr12We1yiDEiNhAKebYzEk8V/uAI=</DigestValue></Reference></SignedInfo><SignatureValue>OfR8R0i7wTIJHQ9eMA+6eHAjWeLb9as4UT8MfR/Tpd2z2poqdw040l5tz9D9a2Sb/F0F4ObtQcooOLmuVyAVmG6GAkAxp+poS8LArz5p/1Y9Mcrn/k2ezhpY34cqUh/wakRoPJD2wt1s9p22qXLC18xR+3Zl3jruWPY9yQPVCkc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tLyxPVPnaD5bePlp7cRcpgagKGrkMh16B/63zdF0ahIvOC7PPSztL2I04Goz2kYPzsgj57zNmoFtVWUhiESLmvq6cV4Hmw5aLJlqRgvPN6WBe2V8IQh2rSk4IJ3kDTmlxbccSGRSL6FCIIfmnw5IYk8uBaLkpxHd2XeL+abBKFc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="02b87fc593c48c6d9e02848d480ca25c7b965daf41a8a1e43bd3115d1cd6e8a0" Description="" Url=""><as:assemblyIdentity name="Malaria.exe" version="1.0.0.23" publicKeyToken="8903bb6e838fddea" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=José\José Saldaña</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Tb25YnotymVCoWAO15gCM0oyU65iuZwoA0AAT8wgXsI=</DigestValue></Reference></SignedInfo><SignatureValue>UnfZRwplK2fQQj0m5I5oJ5MvL36EC+OFTz1+oiuBXq+T+X4KJG7tSH5xco9p8NftgnIHnYbJNgns7LxDAYkpdJZIcjYIekqW0MWvPKrxcwzu1I6OtkPFfI1fOOQlzegyE+3hzdoLaz5m42YZ7E4gr07m1tORi3uQH/pKoL7IL9U=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tLyxPVPnaD5bePlp7cRcpgagKGrkMh16B/63zdF0ahIvOC7PPSztL2I04Goz2kYPzsgj57zNmoFtVWUhiESLmvq6cV4Hmw5aLJlqRgvPN6WBe2V8IQh2rSk4IJ3kDTmlxbccSGRSL6FCIIfmnw5IYk8uBaLkpxHd2XeL+abBKFc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQTICxWgQmZ7ZFpowwGA2UHDANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIASgBvAHMA6QBcAEoAbwBzAOkAIABTAGEAbABkAGEA8QBhMB4XDTE4MDIwMjE3MzE0NFoXDTE5MDIwMjIzMzE0NFowLTErMCkGA1UEAx4iAEoAbwBzAOkAXABKAG8AcwDpACAAUwBhAGwAZABhAPEAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtLyxPVPnaD5bePlp7cRcpgagKGrkMh16B/63zdF0ahIvOC7PPSztL2I04Goz2kYPzsgj57zNmoFtVWUhiESLmvq6cV4Hmw5aLJlqRgvPN6WBe2V8IQh2rSk4IJ3kDTmlxbccSGRSL6FCIIfmnw5IYk8uBaLkpxHd2XeL+abBKFcCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCt3VvlRo6KvopY3JKy53NSDIdJOh8CpSHhjWzJo4EawmLsx7qye/YNnPBxRSxVr23h68Le0OvOTkadF+wqztMsO79Edxc53zzYHTsk0K/ViGEaPHx7Bt1I2/RJPYfZurHzUPhpC9O/KGDAuFT5yLdnnwqtDapXYSjGT1i1MZT6iQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
