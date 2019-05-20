@@ -1,1 +1,2 @@
-# GORGAS tracker software
+# GORGAS tracker scripts
+This repository contains the scripts that run the GORGAS tracker. [Rephone](http://wiki.seeedstudio.com/RePhone/) is an open source modular phone that supports different integrated development environments (IDE): Lua, Javascript, Arduino IDE and Eclipse IDE. Our team worked with Arduino IDE where they developed the two script versions, a simplified and an extended version. 
