@@ -13,4 +13,4 @@ _Version 6.0 was the last design and it was tested on urban and rural settings f
 * **Infill Density:** 30%
 * **Filament:** PLA/ABS
 
-"https://embed.github.com/view/3d/healthinnovation/gorgas_tracker/blob/master/3D_print_files/Malaria v6.0.stl"
+https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl
