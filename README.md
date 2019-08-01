@@ -2,7 +2,7 @@
 
 The GORGAS tracker is an open-source GPS tracker developed by the [Health Innovation Lab](https://imtavh.cayetano.edu.pe/en/research/labs/health-innovation-laboratory.html) from The Institute of Tropical Medicine "Alexander von Humboldt". The GPS tracker was developed and used in a cohort study to investigate the role of human population movement in malaria epidemiology in rural villages in the Peruvian Amazon river networks.
 
-![GORGAS tracker 3D model](images/GORGAS_tracker_v6.png) {:height="200px" width="400px"}
+![GORGAS tracker 3D model](images/GORGAS_tracker_v6.png)
 
 The GORGAS tracker is based on the [Rephone](http://wiki.seeedstudio.com/RePhone/) platform (SeeedStudio) and has the following characteristics:
 * Long-life battery
