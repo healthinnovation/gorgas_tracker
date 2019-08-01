@@ -9,16 +9,18 @@ We recommend you to visit [Rephone wiki documentation](http://wiki.seeedstudio.c
 **Note:** The Arduino IDE for Rephone is only available for Windows XP/Vista/⅞/8.1. Other versions soon. 
 
 ## Scripts
-GORGAS tracker algorithms is based on three tasks: **GPS files reading**, **Power Management**, and **GPS-tracking logs**.     
+Algorithms are based on three tasks: **GPS files reading**, **Power Management**, and **GPS-tracking logs**. GPS files contain the data and medata divided in four plain text files (.txt):
+* locations.txt: GPS coordinates, timestamp, number of satellites, battery life status, and quality of the GPS signal
+* id.txt: participant ID and location status (to identify and report if a participant move outside that boundary)
+* perimeter.txt: centroid and radius of the community (to set a buffer area)
+* time.txt: time interval and time for active and sleep modes
 
-
-workflow has three stages: GPS files reading (“id.txt”, “perimeter.txt” and “time.txt”.), power management and tracking.
-- GPS files reading stage starts with algorithm reading the id file (ID participant and exposure status) to switch a green led (less exposure) or red led (high exposure) on as an initial state. Then time file is read to set up times for power management and the epoch length for tracking. Latitude, longitude, and radius of less exposure are extracted from perimeter file to upload any new configuration.
-- Power management stage configures internal time and date variables from GPS data received. The code is always comparing the internal clock and date with the time and date collected from satellites system. If variables are correct, power management allows the control module to collect location and store data on the locations file. Power mode (time file) is read by the power management to switch data logger off or restore its operations.
-- GPS-tracker collects participants location at the tracking stage. It is constantly verifying if a participant is outside the village. If a participant is detected outside the village, exposure status is modified and control module switch red LED on. Previous data is always compared with the new ones so the tracker knows if a wrong data was stored. If the device doesn’t receive correct data, it sends a request to satellites system ten times in a row until getting a correct one. Blue LED is turned on when a wrong data was stored.
+### Workflow
+- **GPS files reading:** starts with algorithm reading the id file to switch the led (red or green) on as an initial state. Then, the time file is read to set up times for power management and the time interval for tracking.
+- **Power management:** configures internal time and date variables from GPS data received. The code is always comparing the internal clock and date with the time and date collected from satellites system. If variables are correct, power management allows the control module to collect location and store data on the locations file. Power mode (time file) is read by the power management to switch data logger off or restore its operations.
+- **GPS-tracking logs:** collects participants location during the follow-up and constantly verify if a participant is outside the village boundary. As result update the location status in the id file. 
 
 We developed two script versions:
-
 - Simplified version: Gorgas_Simplificado.ino 
 - Extended version: Gorgas_Final.ino
 
