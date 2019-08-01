@@ -6,10 +6,13 @@ This repository contains the scripts that run the GORGAS tracker. This device is
 ## Before you start
 We recommend you to visit [Rephone wiki documentation](http://wiki.seeedstudio.com/RePhone/). There you will find information about [Arduino IDE for Rephone](http://wiki.seeedstudio.com/Arduino_IDE_for_RePhone_Kit/) version which contains the libraries you need to upload the code. Also you can go directly to SeeedStudio Github repository and download the [Arduino IDE](https://github.com/Seeed-Studio/Arduino_IDE_for_RePhone).
 
-**Note:** This Arduino IDE is only available for Windows XP/Vista/⅞/8.1 
+**Note:** The Arduino IDE for Rephone is only available for Windows XP/Vista/⅞/8.1. Other versions soon. 
 
-## Development
-GORGAS tracker algorithm workflow has three stages: GPS files reading (“id.txt”, “perimeter.txt” and “time.txt”.), power management and tracking.
+## Scripts
+GORGAS tracker algorithms is based on three tasks: **GPS files reading**, **Power Management**, and **GPS-tracking logs**.     
+
+
+workflow has three stages: GPS files reading (“id.txt”, “perimeter.txt” and “time.txt”.), power management and tracking.
 - GPS files reading stage starts with algorithm reading the id file (ID participant and exposure status) to switch a green led (less exposure) or red led (high exposure) on as an initial state. Then time file is read to set up times for power management and the epoch length for tracking. Latitude, longitude, and radius of less exposure are extracted from perimeter file to upload any new configuration.
 - Power management stage configures internal time and date variables from GPS data received. The code is always comparing the internal clock and date with the time and date collected from satellites system. If variables are correct, power management allows the control module to collect location and store data on the locations file. Power mode (time file) is read by the power management to switch data logger off or restore its operations.
 - GPS-tracker collects participants location at the tracking stage. It is constantly verifying if a participant is outside the village. If a participant is detected outside the village, exposure status is modified and control module switch red LED on. Previous data is always compared with the new ones so the tracker knows if a wrong data was stored. If the device doesn’t receive correct data, it sends a request to satellites system ten times in a row until getting a correct one. Blue LED is turned on when a wrong data was stored.
