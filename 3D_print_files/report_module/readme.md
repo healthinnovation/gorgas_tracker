@@ -11,5 +11,5 @@ The colors distribution was red when the participant moved outside the boundarie
 - RES 330Ohm SMD (x1)
 - Male pins (x5)
 
-![electronics] (https://github.com/healthinnovation/gorgas_tracker/blob/master/images/GORGAS_electronics.png)
+![electronics](https://github.com/healthinnovation/gorgas_tracker/blob/master/images/GORGAS_electronics.png)
 
