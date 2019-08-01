@@ -6,9 +6,9 @@ The GORGAS tracker is an open-source GPS tracker developed by the [Health Innova
 
 The GORGAS tracker is based on the [Rephone](http://wiki.seeedstudio.com/RePhone/) platform (SeeedStudio) and has the following characteristics:
 * Long-life battery
-* Store GPS coordinates and timestamp
-* Set a buffer area and report if a participant move outside that boundary
-* Lock the interaction with the participant
+* Stores GPS coordinates and timestamp
+* Sets a buffer area and report if a participant move outside that boundary
+* Locks the interaction with the participant
 * Easy set-up during fieldwork using a laptop/tablet (visual interface)
 
 ![Visualizacion_Mov](images/moveVis.gif)
