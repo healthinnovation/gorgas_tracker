@@ -16,5 +16,10 @@ _Version 6.0 (65.73x22.75x86.10mm) was the last design and it was tested on urba
 ![STL_animation](https://github.com/healthinnovation/gorgas_tracker/blob/master/images/stl_animation.gif)
 
 ## Hardware assembly
-* Rephone Geo Kit
-* M4 
+* Rephone Geo Kit + Reporting module (x1)
+* 3D printed parts set (x1)
+* Li-Po battery 2500mAh (x1)
+* M3 12mm screws (x2)
+* M3 nuts (x2)
+
+![GPS_explode](https://github.com/healthinnovation/gorgas_tracker/blob/master/images/GORGAS_tracker_v6_explode.png)
