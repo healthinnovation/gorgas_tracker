@@ -13,4 +13,4 @@ _Version 6.0 was the last design and it was tested on urban and rural settings f
 * **Infill Density:** 30%
 * **Filament:** PLA/ABS
 
-https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl
+![GORGAS_tracker](https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl)
